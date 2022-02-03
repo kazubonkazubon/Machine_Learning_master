@@ -1,0 +1,30 @@
+CNN_NO1
+CNN_NO2
+VGG_16_fine_tuning
+VGG_16_ArcFace_fine_tuning
+VGG16_ArcFace
+SVM
+VGG_16_trans_MLP
+VGG_16_trans_MLP_fine_tuning
+MobileNetV2_trans_MLP
+ResNet_trans_MLP
+ResNet_trans_SVM
+VGG_16_trans_SVM
+VGG_19_trans_SVM
+MobileNetV2_trans_SVM
+InceptionV3_trans_SVM
+------------
+以下，詳細
+CNN_NO1:2層の一般的なCNN
+CNN_NO2:4層の一般的なCNN
+VGG16_ArcFace: VGG_16に対してArcfaceを導入したモデル　現行では，
+VGG_16_fine_tuning:VGG_16をbaseとしてfine tuningをしたCNNモデル　ただし，fine tuningの層は何層から行うのかを検討するべき
+VGG_16_ArcFace_fine_tuning：VGG_16をbaseにArc Face を導入し，最終結合にArc Faceを導入し，hard marginに対して対応を行う
+VGG_16_trans_MLP　VGG16をbaseに最終結合層のみを学習する転移学習
+MobileNetV2_trans_MLP MobileNetV2をbaseに最終結合層のみを学習する転移学習
+ResNet_trans_MLP　ResNet50をbaseに最終結合層のみを学習する転移学習
+
+
+
+
+
