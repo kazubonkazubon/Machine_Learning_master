@@ -18,10 +18,29 @@ MagFace
 CNNを特徴量抽出器として使用し出力結果に対して類似度を計算することで
 未知データにも対応することを目的としています
 
-![画像名](相対パスまたは絶対パス)
+![距離学習](./距離学習.png)
+
+
+
+画像数が非常に少ないため、転移学習を導入
+特徴量抽出器として
+* VGG16
+* MobileNet v2
+* Resnet 50
+* Inception v3
+
+分類器として
+* SVM
+* MLP
+
+を採用しています
+
+これはImage netとは大幅に異なる画像を対象にするためです
+参考:スタンフォード大学講義資料
+<https://cs231n.github.io/transfer-learning/>
 
 実装はGoogle colab上で実装
-TensorFlowです
+
 
 
 6分割交差検証を行います
@@ -39,4 +58,4 @@ None
  # Author
  
 * Kazuki Mori
-* Graduate School Student
+* Graduate School Student,Tokyo,Japan
